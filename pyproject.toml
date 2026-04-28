@@ -19,3 +19,9 @@ dependencies = [
 dev = [
     "pytest>=9.0.3",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qogen"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
